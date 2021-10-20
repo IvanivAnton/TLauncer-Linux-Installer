@@ -1,4 +1,4 @@
-# TLauncer-Installer
+# TLauncer Linux Installer
 Shell scripts for downloading and installing last version of [TLauncher](https://tlauncher.org/) at Linux OS
 
 # OS
