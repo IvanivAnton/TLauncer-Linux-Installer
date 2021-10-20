@@ -19,6 +19,11 @@ or completely remove Java 9 or 10.)</b>
 Application asks for root rights due to fact that if you run without root privileges,
 then there are problems with the graphics (gpu)
 
+# Install
+ 1. `cd TLauncer-Installer`<br>
+ 2. `chmod a+x setup.sh`<br>
+ 3. `./setup.sh`<bt>
+
 # Contacts
 Author: Ivaniv Anton 
 <br>
