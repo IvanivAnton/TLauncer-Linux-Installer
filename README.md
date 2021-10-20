@@ -20,7 +20,7 @@ Application asks for root rights due to fact that if you run without root privil
 then there are problems with the graphics (gpu)
 
 # Install
- 1. Download release from [page](https://github.com/Korzinkayablok/TLauncer-Installer/releases/new)
+ 1. Download release from [releases page](https://github.com/Korzinkayablok/TLauncer-Installer/releases/)
  2. unzip release
  3. `cd TLauncer-Installer`<br> 
  4. `chmod a+x setup.sh`<br>
