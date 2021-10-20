@@ -16,7 +16,7 @@ Install these packages before install
 or completely remove Java 9 or 10.)</b>
 
 # Important!
-Application asks for root rights due to fact that if you run without root privileges,
+TLauncher asks for root rights due to fact that if you run without root privileges,
 then there are problems with the graphics (gpu)
 
 # Install
