@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=
+Comment[ru_RU]=Run TLauncherName
+Comment=Run TLauncherName
+Exec=TLauncherRoot/TLauncherName.sh
+GenericName[ru_RU]=Запускаем TLauncherName
+Icon=TLauncherRoot/TLauncher.png
+Keywords=Мой скрипт
+MimeType=
+Name[ru_RU]=TLauncherName
+Name=TLauncherName
+NoDiplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=none
+X-KDE-SubstituteUID=true
+X-KDE-Username=root
