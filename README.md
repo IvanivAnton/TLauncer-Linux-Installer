@@ -1,5 +1,8 @@
 # TLauncer-Installer
-Shell scripts for downloading and installing last version of TLauncher
+Shell scripts for downloading and installing last version of [TLauncher](https://tlauncher.org/) at Linux OS
+
+# OS
+  Successfuly tested on <b>Kubuntu 20.04 LTS</b>
 
 # Requirements
 Install these packages before install
@@ -8,8 +11,9 @@ Install these packages before install
 - unzip
 - openjdk-8-jre 
 - openjfx
-(If you have Java 9 or 10, you need to install Java 8 and get the launcher to work from it,
-or completely remove Java 9 or 10.)
+<br>
+<b>(If you have Java 9 or 10, you need to install Java 8 and get the launcher to work from it,
+or completely remove Java 9 or 10.)</b>
 
 # Important!
 Application asks for root rights due to fact that if you run without root privileges,
