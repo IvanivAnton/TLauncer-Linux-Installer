@@ -1,3 +1,5 @@
 #!/bin/bash
-sudo java -jar TLauncherRoot/TLauncherJarFile
+
+sudo nohup java -jar TLauncherRoot/TLauncherJarFile > TLauncherDist/TLauncher.out
+
  
