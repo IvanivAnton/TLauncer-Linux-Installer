@@ -27,8 +27,8 @@ then there are problems with the graphics (gpu)
  4. `chmod a+x setup.sh`<br>
  5. If you only one java 8 version installed on your system run this command`./setup.sh` 
  <br>OR<br>
- 5. Specify java 8 binary path using -j flag. Example `./setup.sh -j /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`<br> 
-    On Ubuntu 20.04 you can get paths to all java bin by using this command: `update-alternatives --list java`
+ Specify java 8 binary path using -j flag. Example `./setup.sh -j /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`<br><br>
+ On Ubuntu 20.04 you can get paths to all java bin by using this command: `update-alternatives --list java`
 
 # Logs
 You can check logs in dist derictory of installation path: /home/TLauncher-\*.\*/dist/TLauncher.out
