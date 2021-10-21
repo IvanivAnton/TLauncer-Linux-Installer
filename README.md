@@ -26,6 +26,9 @@ then there are problems with the graphics (gpu)
  4. `chmod a+x setup.sh`<br>
  5. `./setup.sh`<bt>
 
+# Logs
+You can check logs in dist derictory of installation path: /home/TLauncher-*.*/dist/TLauncher.out
+
 # Contacts
 Author: Ivaniv Anton 
 <br>

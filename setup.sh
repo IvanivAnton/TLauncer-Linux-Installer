@@ -7,7 +7,8 @@ unzip TLauncher.zip
 rm -f TLauncher.zip *.txt
 
 TLauncherName=$(basename *.jar .jar)
-TLauncherDir="$HOME/.local/share/${TLauncherName}"
+TLauncherDir="$HOME/${TLauncherName}"
+TLauncherDist="$TLauncherDir/dist"
 
 rm -rf $TLauncherDir
 mkdir $TLauncherDir
@@ -20,9 +21,11 @@ cp $TLauncherName.jar "$TLauncherDir/dist"
 
 rm -f *.jar
 cd "$TLauncherDir/dist"
+touch TLauncher.out 
 
 sed -i 's|TLauncherRoot|'"$TLauncherDir"'/dist|g' ./TLauncher.sh
 sed -i 's|TLauncherJarFile|'"$TLauncherName"'.jar|g' ./TLauncher.sh
+sed -i 's|TLauncherDist|'"$TLauncherDist"'|g' ./TLauncher.sh
 chmod a+x TLauncher.sh
 mv TLauncher.sh "${TLauncherName}.sh"
 
