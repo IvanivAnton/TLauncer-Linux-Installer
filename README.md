@@ -23,8 +23,8 @@ then there are problems with the graphics (gpu)
 
 # Install
  1. Download release from [releases page](https://github.com/Korzinkayablok/TLauncer-Installer/releases/)
- 2. unzip release
- 3. `cd TLauncer-Installer-version`<br> 
+ 2. unzip
+ 3. `cd TLauncer-Installer-*.*.*`<br> 
  4. `chmod a+x setup.sh`<br>
  5. `./setup.sh`<bt>
 
