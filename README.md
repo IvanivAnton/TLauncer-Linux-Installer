@@ -13,8 +13,6 @@ Install these packages before install
 - unzip
 - openjdk-8-jre 
 - openjfx
-<br>
-
 
 # Important!
 TLauncher asks for root rights due to fact that if you run without root privileges,
