@@ -14,8 +14,7 @@ Install these packages before install
 - openjdk-8-jre 
 - openjfx
 <br>
-<b>(If you have Java 9 or 10, you need to install Java 8 and get the launcher to work from it,
-or completely remove Java 9 or 10.)</b>
+
 
 # Important!
 TLauncher asks for root rights due to fact that if you run without root privileges,
@@ -26,7 +25,10 @@ then there are problems with the graphics (gpu)
  2. unzip
  3. `cd TLauncer-Installer-*.*.*`<br> 
  4. `chmod a+x setup.sh`<br>
- 5. `./setup.sh`<bt>
+ 5. If you only one java 8 version installed on your system run this command`./setup.sh` 
+ <br>OR<br>
+ 5. Specify java 8 binary path using -j flag. Example `./setup.sh -j /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`<br> 
+    On Ubuntu 20.04 you can get paths to all java bin by using this command: `update-alternatives --list java`
 
 # Logs
 You can check logs in dist derictory of installation path: /home/TLauncher-\*.\*/dist/TLauncher.out
