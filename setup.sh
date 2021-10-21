@@ -1,5 +1,6 @@
 #!/bin/bash
 
+Java8Path=java
 while getopts j: flag
 do
     case "${flag}" in
