@@ -2,7 +2,9 @@
 Shell scripts for downloading and installing last version of [TLauncher](https://tlauncher.org/) at Linux OS
 
 # OS
-  Successfuly tested on <b>Kubuntu 20.04 LTS</b>
+  Successfuly tested on 
+  - Ubuntu 20.04 LTS, KDE
+  - Ubuntu 18.04 LTS, Gnome
 
 # Requirements
 Install these packages before install
