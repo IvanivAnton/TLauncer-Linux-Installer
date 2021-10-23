@@ -19,9 +19,9 @@ TLauncher asks for root rights due to fact that if you run without root privileg
 then there are problems with the graphics (gpu)
 
 # Install
- 1. Download release from [releases page](https://github.com/Korzinkayablok/TLauncer-Installer/releases/)
+ 1. Download `TLauncher-Installer.zip` from [releases page](https://github.com/Korzinkayablok/TLauncer-Installer/releases/)
  2. unzip
- 3. `cd TLauncer-Installer-*.*.*`<br> 
+ 3. `cd TLauncer-Installer`<br> 
  4. `chmod a+x setup.sh`<br>
  5. If you only one java 8 version installed on your system run this command`./setup.sh` 
  <br>OR<br>
