@@ -1,22 +1,29 @@
 #!/bin/bash
 
 Java8Path=java
-while getopts j: flag
-do
-    case "${flag}" in
-        j) Java8Path=${OPTARG};;
+proxy=""
+while getopts ":jp:" option; do
+    case ${option} in
+        j) # java custom binary
+            Java8Path=${OPTARG}
+            ;;
+        p) # proxy option
+            proxy=${OPTARG}
+            ;;
+        \?) # Invalid option
+            echo "Error: Invalid option"
+            exit;;
     esac
 done
 
-rm -f TLauncher.zip *.txt *.jar
-
-curl https://tlauncher.org/jar -L --output TLauncher.zip
-unzip TLauncher.zip
-rm -f TLauncher.zip *.txt
+curl https://tlauncher.org/jar -L --output TLauncher.zip --proxy "${proxy}"
+unzip -o TLauncher.zip
+rm -f TLauncher.zip README-EN.txt README-RUS.txt
 
 TLauncherName=$(basename *.jar .jar)
 TLauncherDir="$HOME/${TLauncherName}"
 TLauncherDist="$TLauncherDir/dist"
+TLauncherLogFileName="TLauncher.out"
 
 rm -rf $TLauncherDir
 mkdir $TLauncherDir
@@ -29,11 +36,12 @@ cp $TLauncherName.jar "$TLauncherDir/dist"
 
 rm -f *.jar
 cd "$TLauncherDir/dist"
-touch TLauncher.out 
+touch ${TLauncherLogFileName}
 
 sed -i 's|TLauncherRoot|'"$TLauncherDir"'/dist|g' ./TLauncher.sh
 sed -i 's|TLauncherJarFile|'"$TLauncherName"'.jar|g' ./TLauncher.sh
 sed -i 's|TLauncherDist|'"$TLauncherDist"'|g' ./TLauncher.sh
+sed -i 's|TLauncher.out|'"$TLauncherLogFileName"'|g' ./TLauncher.sh
 sed -i 's|java|'"$Java8Path"'|g' ./TLauncher.sh
 chmod a+x TLauncher.sh
 mv TLauncher.sh "${TLauncherName}.sh"
