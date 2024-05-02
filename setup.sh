@@ -18,14 +18,14 @@ done
 
 curl https://tlauncher.org/jar -L --output TLauncher.zip --proxy "${proxy}"
 unzip -o TLauncher.zip
-rm -f TLauncher.zip README-EN.txt README-RUS.txt
+rm -fi TLauncher.zip README-EN.txt README-RUS.txt
 
 TLauncherName=$(basename *.jar .jar)
 TLauncherDir="$HOME/${TLauncherName}"
 TLauncherDist="$TLauncherDir/dist"
 TLauncherLogFileName="TLauncher.out"
 
-rm -rf $TLauncherDir
+rm -rfi $TLauncherDir
 mkdir $TLauncherDir
 mkdir "$TLauncherDir/dist"
 
@@ -34,7 +34,7 @@ cp ./dist/TLauncher.sh "$TLauncherDir/dist"
 cp ./dist/TLauncher.desktop $TLauncherDir
 cp $TLauncherName.jar "$TLauncherDir/dist"
 
-rm -f *.jar
+rm -fi *.jar
 cd "$TLauncherDir/dist"
 touch ${TLauncherLogFileName}
 
@@ -52,6 +52,6 @@ sed -i 's|TLauncherName|'"$TLauncherName"'|g' ./TLauncher.desktop
 chmod a+x TLauncher.desktop
 mv TLauncher.desktop "${TLauncherName}.desktop"
 
-rm -f "$HOME/.local/share/applications/${TLauncherName}.desktop"
+rm -fi "$HOME/.local/share/applications/${TLauncherName}.desktop"
 cp "${TLauncherName}.desktop" "$HOME/.local/share/applications/"
 chmod a+x "$HOME/.local/share/applications/${TLauncherName}.desktop"
